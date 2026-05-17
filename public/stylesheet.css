@@ -1,3 +1,86 @@
-body {
-    background-color:aqua;
+/* for reuse in all if not most views: */
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #304932;
+    padding: 5px;
+    z-index: 1000;
+    border-radius: 10px;
 }
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar a {
+    display: flex;
+    padding: 15px;
+    margin-left: 20px;
+    color: #fff7e6;
+    text-decoration: none;
+    transition: 150ms;
+    border-radius: 20px;
+}
+.navbar a:hover{
+    background-color: #426045;
+}
+
+
+/* change font of webpages */
+@font-face {
+    font-family: "Horizon";
+    src: url("../public/Horizon-Font/horizon.otf") format("opentype");
+}
+
+* {
+    font-family: "horizon", sans-serif;
+}
+
+body {
+    background-color: #426045;
+}
+/* - - - - END REUSE - - - - - */
+
+#mainContent {
+    height: 100vh;
+    color:#fff7e6;
+    background-image: url("../public/assets/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/* #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 10%;
+} */
+
+#HomePageMainBox{
+    margin-top: 30%;
+    background-color: #304932;
+    width:100%;
+    /* 2:1 width - to - height ratio, ensures circularity  */
+    aspect-ratio: 2/1; 
+    border-radius: 50% 50% 0 0;
+}
+
+#HomePageMainBox > #headerAndIntro{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
