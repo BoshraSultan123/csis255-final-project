@@ -1,0 +1,24 @@
+{
+  "name": "csis255-final-project",
+  "version": "1.0.0",
+  "description": "Full-Stack Web Application Project",
+  "main": "server.js",
+  "start": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoshraSultan123/csis255-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoshraSultan123/csis255-final-project/issues"
+  },
+  "homepage": "https://github.com/BoshraSultan123/csis255-final-project#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
