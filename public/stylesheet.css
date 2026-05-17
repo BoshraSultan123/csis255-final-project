@@ -43,10 +43,10 @@
 body {
     background-color: #426045;
 }
-/* - - - - END REUSE - - - - - */
 
-#mainContent {
-    height: 100vh;
+
+#background1 {
+    height: 90vh;
     color:#fff7e6;
     background-image: url("../public/assets/forest.jpg");
     background-repeat: no-repeat;
@@ -54,28 +54,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    gap:0;
 }
+/* - - - - END REUSE - - - - - */
 
-/* #info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 30%;
-    align-items: center;
-    font-size: xx-large;
-    margin-top: 10%;
-} */
 
-#HomePageMainBox{
-    margin-top: 30%;
+/* - - - - - - - - - - - - - - MAIN HOMEPAGE STYLES - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - -  T O P  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
+
+.HomePageMainBox{
+    margin-top: 25%;
     background-color: #304932;
     width:100%;
     /* 2:1 width - to - height ratio, ensures circularity  */
     aspect-ratio: 2/1; 
     border-radius: 50% 50% 0 0;
+    height: 400px;
 }
 
-#HomePageMainBox > #headerAndIntro{
+.HomePageMainBox > #headerAndIntro{
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -83,4 +81,46 @@ body {
     align-items: center;
     text-align: center;
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
+
+/* - - - - - - - - - - - - - - - - -  M I D D L E  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
+.MiddleContent {
+    background-color: #304932;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+} 
+
+#FeaturedCat{
+    margin-top: 60px;
+    background-color: #fff7e6;
+    color:#304932;
+    width: 50%;
+}
+
+.FCDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+#featuredCatHeading {
+    text-align: center;
+    background-color: #304932;
+    color: #fff7e6;
+}
+
+.button{
+    background-color: #426045;
+    color:#fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
