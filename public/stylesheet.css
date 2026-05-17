@@ -45,7 +45,7 @@ body {
 }
 
 
-.background1 {
+#background1 {
     height: 90vh;
     color:#fff7e6;
     background-image: url("../public/assets/forest.jpg");
@@ -87,13 +87,40 @@ body {
 /* - - - - - - - - - - - - - - - - -  M I D D L E  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
 .MiddleContent {
     background-color: #304932;
-    height: 900px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 } 
 
 #FeaturedCat{
+    margin-top: 60px;
     background-color: #fff7e6;
     color:#304932;
+    width: 50%;
+}
+
+.FCDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+#featuredCatHeading {
+    text-align: center;
+    background-color: #304932;
+    color: #fff7e6;
+}
+
+.button{
+    background-color: #426045;
+    color:#fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
 }
