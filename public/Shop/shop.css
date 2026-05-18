@@ -1,0 +1,112 @@
+
+
+
+    /* -------------- SHOP STYLES ---------------*/
+
+.shopMainBox{
+    margin-top: 25%;
+    background-color: #304932;
+    width:100%;
+    /* 2:1 width - to - height ratio, ensures circularity  */
+    aspect-ratio: 2/1; 
+    border-radius: 50% 50% 0 0;
+    height: 400px;
+}
+
+
+.shopMainBox > #shopTitle{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+
+.shopMiddleContent {
+    background-color: #304932;
+    height: 1200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+
+} 
+
+
+.cardsContainer {
+    background-color: #304932;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+
+
+}
+
+.card {
+    height: 500px;
+    background-color:#fbeccd;
+    border-radius: 16px;
+
+}
+
+/* to test searchBy studff (testing smth) */
+
+.searchByContainer {
+    background-color: #1a2b1c;
+    border-radius: 10px;
+    padding: 70px 40px;
+    width: 60%;
+    margin: auto;
+}
+
+.searchByTitle {
+    color: #fff7e6;
+    font-family: "Horizon", sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.14em;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.filterRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.filterLabel {
+    color: #fff7e6;
+    font-family: "Horizon", sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.filterBtn {
+    background-color: #304932;
+    color: #fff7e6;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-family: "Horizon", sans-serif;
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.filterBtn:hover {
+    background-color: #426045;
+}
