@@ -33,7 +33,7 @@
 /* change font of webpages */
 @font-face {
     font-family: "Horizon";
-    src: url("../public/Horizon-Font/horizon.otf") format("opentype");
+    src: url("/Horizon-Font/horizon.otf") format("opentype");
 }
 
 * {

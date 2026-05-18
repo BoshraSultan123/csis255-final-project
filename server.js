@@ -1,17 +1,15 @@
+const express = require("express");
+const path = require("path");
 
+const app = express();
+const PORT = 3000;
 
-// modules imported into server.js --> assigned value to var with require()
-// name variable after mosule. underscore is used 
-const http = require("http")
+app.use(express.static(path.join(__dirname, "public")));
 
-// // imports the underscore.js library and stores it in the variable "_"
-// // underscore provides helper functions for arrays, objects, and lists
-// const _ = require("underscore")
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "public", "homepage", "index.html"));
+});
 
-http.createServer(function(request,response){
-    response.writeHead(200, {"Content-Type": "text/html"})
-    response.write("<h1>Hello world</h1>")
-    response.end()
-}).listen(3000)
-
-console.log("Listening on port 3000...")
+app.listen(PORT, function () {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
