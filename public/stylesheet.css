@@ -1,12 +1,11 @@
 /* for reuse in all if not most views: */
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
+    width: 100%;
+    left: 0;
+    position: fixed;
     top: 0;
     background: #304932;
     padding: 5px;
-    z-index: 1000;
-    border-radius: 10px;
 }
 
 .navbar ul {
@@ -25,7 +24,8 @@
     transition: 150ms;
     border-radius: 20px;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     background-color: #426045;
 }
 
@@ -47,33 +47,34 @@ body {
 
 #background1 {
     height: 90vh;
-    color:#fff7e6;
+    color: #fff7e6;
     background-image: url("../public/assets/forest.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap:0;
+    gap: 0;
 }
+
 /* - - - - END REUSE - - - - - */
 
 
-/* - - - - - - - - - - - - - - MAIN HOMEPAGE STYLES - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - -  M A I N  H O M E P A G E  S T Y L E S  - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* - - - - - - - - - - - - - - - - -  T O P  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
 
-.HomePageMainBox{
+.topContent {
     margin-top: 25%;
     background-color: #304932;
-    width:100%;
+    width: 100%;
     /* 2:1 width - to - height ratio, ensures circularity  */
-    aspect-ratio: 2/1; 
+    aspect-ratio: 2/1;
     border-radius: 50% 50% 0 0;
     height: 400px;
 }
 
-.HomePageMainBox > #headerAndIntro{
+.topContent>#headerAndIntro {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -81,27 +82,40 @@ body {
     align-items: center;
     text-align: center;
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 
 /* - - - - - - - - - - - - - - - - -  M I D D L E  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
 .MiddleContent {
     background-color: #304932;
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-} 
+    padding-bottom: 10%;
+    border-radius: 0 0 30% 30%;
+    margin-bottom: 80px;
+}
 
-#FeaturedCat{
+#FeaturedCat {
     margin-top: 60px;
     background-color: #fff7e6;
-    color:#304932;
-    width: 50%;
+    color: #304932;
+    width: 60%;
+    margin-bottom: 5%;
+    box-shadow: 0px 15px 70px rgba(255, 247, 230, 0.65);
+
+}
+
+.MiddleContHeading {
+    text-align: center;
+    background-color: #304932;
+    color: #fff7e6;
+    width: 700px;
+    border-radius: 15px;
+    padding: 10px 10px;
 }
 
 .FCDiv {
@@ -110,17 +124,71 @@ body {
     justify-content: space-between;
     padding: 10px;
 }
-#featuredCatHeading {
-    text-align: center;
-    background-color: #304932;
-    color: #fff7e6;
-}
 
-.button{
+.button {
     background-color: #426045;
-    color:#fff7e6;
+    color: #fff7e6;
     padding: 20px;
     border-radius: 10px;
     text-decoration: none;
 
 }
+
+#WhyGreen {
+    background-color: #fff7e6;
+    width: 60%;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 15px 70px rgba(255, 247, 230, 0.65);
+}
+
+#whyGreenButton {
+    display: flex;
+    justify-content: end;
+}
+
+#whyGreenButton>a {
+    background-color: #304932;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff7e6;
+    border-radius: 10px;
+}
+
+#whyChoose {
+    background-color: #fff7e6;
+    margin-top: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 70px rgba(255, 247, 230, 0.65);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - - - - - - - - - - E N D  C O N T E N T - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* for reuse in all if not most views: */
+.footer {
+    background-color: #304932;
+    border-radius: 40% 40% 0 0;
+    height: fit-content;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer a {
+    margin: 0 10px 0 10px;
+    color: #fff7e6;
+    font-size: 13px;
+}
+
+/* - - - - END REUSE - - - - - */
