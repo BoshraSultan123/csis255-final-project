@@ -76,14 +76,17 @@ const plants = [
         water: "Every 2 weeks",
         image: "../public/assets/echeveria.jpg",
         inStock: true
-    },
-    {
-        name: "Golden Barrel Cactus",
-        category: "Cactus",
-        price: 5.250,
-        sunlight: "Full sun",
-        water: "Every 3-4 weeks",
-        image: "../public/assets/golden-barrel-cactus.jpg",
-        inStock: true
-    }
+     }
+
+
+
+    // // ,{
+    // //     name: "Golden Barrel Cactus",
+    // //     category: "Cactus",
+    // //     price: 5.250,
+    // //     sunlight: "Full sun",
+    // //     water: "Every 3-4 weeks",
+    // //     image: "../public/assets/golden-barrel-cactus.jpg",
+    // //     inStock: true
+    // // }
 ];
