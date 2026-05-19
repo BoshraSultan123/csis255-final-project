@@ -1,5 +1,19 @@
 /* -------------- SHOP STYLES ---------------*/
 
+
+#background1 {
+    height: auto;
+    background-image: url("/assets/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    color: #fff7e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+}
+
 .shopMainBox {
     margin-top: 25%;
     background-color: #304932;

@@ -7,7 +7,7 @@ const plants = [
         price: 6.000,
         sunlight: "Low to bright indirect light",
         water: "Every 2 weeks",
-        image: "../../public/assets/plants/snake-plant.jpeg",
+        image: "/assets/plants/snake-plant.jpeg",
         inStock: true
     },
     {
@@ -17,7 +17,7 @@ const plants = [
         price: 9.500,
         sunlight: "Bright indirect light",
         water: "Once a week",
-        image: "../../public/assets/plants/monstera-plant.jpeg",
+        image: "/assets/plants/monstera-plant.jpeg",
         inStock: true
     },
     {
@@ -27,7 +27,7 @@ const plants = [
         price: 7.250,
         sunlight: "Low to medium indirect light",
         water: "Once a week",
-        image: "../../public/assets/plants/peace-lilly.jpeg",
+        image: "/assets/plants/peace-lilly.jpeg",
         inStock: true
     },
 
@@ -39,7 +39,7 @@ const plants = [
         price: 4.750,
         sunlight: "Full sun",
         water: "When soil feels dry",
-        image: "../../public/assets/plants/lavender.jpeg",
+        image: "/assets/plants/lavender.jpeg",
         inStock: true
     },
     {
@@ -49,7 +49,7 @@ const plants = [
         price: 8.000,
         sunlight: "Full sun",
         water: "Regular watering",
-        image: "../../public/assets/plants/hibiscus.jpeg",
+        image: "/assets/plants/hibiscus.jpeg",
         inStock: true
     },
     {
@@ -59,7 +59,7 @@ const plants = [
         price: 3.500,
         sunlight: "Full sun",
         water: "When soil feels dry",
-        image: "../../public/assets/plants/rosemary.jpeg",
+        image: "/assets/plants/rosemary.jpeg",
         inStock: true
     },
 
@@ -71,7 +71,7 @@ const plants = [
         price: 4.500,
         sunlight: "Bright indirect light",
         water: "Every 2-3 weeks",
-        image: "../../public/assets/plants/Aloe-Vera.jpeg",
+        image: "/assets/plants/Aloe-Vera.jpeg",
         inStock: true
     },
     {
@@ -81,7 +81,7 @@ const plants = [
         price: 3.750,
         sunlight: "Bright light",
         water: "Every 2 weeks",
-        image: "../../public/assets/plants/echeveria.jpeg",
+        image: "/assets/plants/echeveria.jpeg",
         inStock: true
     },
     {
@@ -91,9 +91,26 @@ const plants = [
         price: 5.250,
         sunlight: "Full sun",
         water: "Every 3-4 weeks",
-        image: "../../public/assets/plants/golden-barrel-cactus.jpeg",
+        image: "/assets/plants/golden-barrel-cactus.jpeg",
         inStock: true
-    }
+    } ,
+   {
+    name: "Spider Plant",
+    category: "Indoor Plant",
+    careLevel: "Easy",
+    price: 3.500,
+    sunlight: "Bright indirect light",
+    water: "Every 1-2 weeks",
+    image: "/assets/plants/spiderPlant.png",
+    inStock: true
+}
+
+
+
+
+
+
+
 ];
 
 
