@@ -45,10 +45,12 @@
     font-family: "Horizon", sans-serif;
 }
 
-p{
+p, label, input::placeholder{
     font-family: "League Spartan", sans-serif;
     font-size: x-large;
 }
+
+
 
 body {
     background-color: #1b2824;
