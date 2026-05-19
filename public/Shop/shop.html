@@ -32,27 +32,28 @@
             <div class="searchByContainer">
 
                 <div class="SearchByTitleContainer">
-                    <p class="searchByTitle">SEARCH BY (ONE FILTER AT A TIME)</p>
+                    <p class="searchByTitle">SEARCH BY (ONE OPTION PER ROW)</p>
                 </div>
 
                 <div class="rowsContainer">
                     <div class="filterRow">
                         <span class="filterLabel">PLANT TYPE</span>
-                        <button class="filterBtn">INDOOR</button>
-                        <button class="filterBtn">OUTDOOR</button>
+                        
+<button class="filterBtn" onclick="setFilter('type', 'indoor' ,this)">INDOOR</button>
+<button class="filterBtn" onclick="setFilter('type', 'outdoor' ,this)">OUTDOOR</button>
                     </div>
 
                     <div class="filterRow">
                         <span class="filterLabel">PRICE</span>
-                        <button class="filterBtn">HIGH - LOW</button>
-                        <button class="filterBtn">LOW - HIGH</button>
+<button class="filterBtn" onclick="setFilter('price', 'high-low' ,this)">HIGH - LOW</button>
+<button class="filterBtn" onclick="setFilter('price', 'low-high' ,this)">LOW - HIGH</button>
                     </div>
 
                     <div class="filterRow">
                         <span class="filterLabel">CARE LEVEL</span>
-                        <button class="filterBtn">EASY</button>
-                        <button class="filterBtn">MEDIUM</button>
-                        <button class="filterBtn">HARD</button>
+<button class="filterBtn" onclick="setFilter('care', 'easy' ,this)">EASY</button>
+<button class="filterBtn" onclick="setFilter('care', 'medium' ,this)">MEDIUM</button>
+<button class="filterBtn" onclick="setFilter('care', 'hard' ,this)">HARD</button>
                     </div>
                 </div>
             </div>
@@ -60,109 +61,17 @@
 
             <!-- Shop middle content (basically the plant cards) -->
             <div class="shopMiddleContent">
-                <div class="cardsContainer">
-                     <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/Aloe-Vera.jpeg" alt="Aloe Vera">
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-                    </div> 
-
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                             <img src="../assets/plants/Echeveria.jpeg" alt="Echeveria">
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/golden-barrel-cactus.jpeg" alt="Golden Barrel Cactus">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/hibiscus.jpeg" alt="hibiscus">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/lavender.jpeg" alt="Lavender">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/monstera-plant.jpeg" alt="Monstera">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/peace-lilly.jpeg" alt="Peace Lilly">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"></div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/Rosemary.jpeg" alt="Rosemary">
-
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
-                    <div class="card">
-                        <div class="plntName"> </div>
-                        <div class="plntImg">
-                            <img src="../assets/plants/snake-plant.jpeg" alt="Snake Plant">                            
-                        </div>
-                        <div class="plntDtls"></div>
-                        <button class="addToCart">ADD TO CART</button>
-
-                    </div>
+                <div class="cardsContainer" id="cardsContainer"> 
 
                 </div>
-
-
-
-
             </div>
-
         </div>
     </div>
 
 
 
-
-
+    <script src="plantinfo.js"></script>
+    <script src="shop.js"></script>
 
 </body>
 
