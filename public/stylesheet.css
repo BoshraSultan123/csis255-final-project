@@ -33,19 +33,29 @@
 /* change font of webpages */
 @font-face {
     font-family: "Horizon";
-    src: url("/Horizon-Font/horizon.otf") format("opentype");
+    src: url("/Fonts/Horizon-Font/horizon.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url("/Fonts/League_Spartan/static/LeagueSpartan-Regular.ttf") format("truetype");
 }
 
 * {
-    font-family: "horizon", sans-serif;
+    font-family: "Horizon", sans-serif;
+}
+
+p{
+    font-family: "League Spartan", sans-serif;
+    font-size: x-large;
 }
 
 body {
     background-color: #1b2824;
 }
 
-main{
-    flex:1;
+main {
+    flex: 1;
 }
 
 
@@ -62,7 +72,7 @@ main{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    color:#fff7e6;
+    color: #fff7e6;
 }
 
 .footer ul {

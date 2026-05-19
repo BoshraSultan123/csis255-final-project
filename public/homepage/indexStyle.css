@@ -16,13 +16,13 @@
 /* - - - - - - - - - - - - - - - - -  T O P  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
 
 .topContent {
-    margin-top: 25%;
+    margin-top: 28%;
     background-color: #304932;
     width: 100%;
     /* 2:1 width - to - height ratio, ensures circularity  */
     aspect-ratio: 2/1;
     border-radius: 50% 50% 0 0;
-    height: 400px;
+    height: 500px;
 }
 
 .topContent>#headerAndIntro {
@@ -111,6 +111,11 @@
     margin-top: 70px;
     border-radius: 15px;
     box-shadow: 0px 15px 70px rgba(255, 247, 230, 0.45);
+}
+
+#whyChoose > div > ul > li {
+    font-family: "League Spartan", sans-serif;
+    font-size: x-large;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
