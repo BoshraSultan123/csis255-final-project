@@ -3,7 +3,7 @@ const plants = [
     {
         name: "Snake Plant",
         category: "Indoor Plant",
-        careLevel: "Easy",
+        careLevel: "Medium",
         price: 6.000,
         sunlight: "Low to bright indirect light",
         water: "Every 2 weeks",
@@ -13,7 +13,7 @@ const plants = [
     {
         name: "Monstera",
         category: "Indoor Plant",
-        careLevel: "Medium",
+        careLevel: "Hard",
         price: 9.500,
         sunlight: "Bright indirect light",
         water: "Once a week",
@@ -23,7 +23,7 @@ const plants = [
     {
         name: "Peace Lily",
         category: "Indoor Plant",
-        careLevel: "Easy",
+        careLevel: "Medium",
         price: 7.250,
         sunlight: "Low to medium indirect light",
         water: "Once a week",
@@ -45,7 +45,7 @@ const plants = [
     {
         name: "Hibiscus",
         category: "Outdoor Plant",
-        careLevel: "Medium",
+        careLevel: "Hard",
         price: 8.000,
         sunlight: "Full sun",
         water: "Regular watering",
@@ -77,7 +77,7 @@ const plants = [
     {
         name: "Echeveria",
         category: "Succulent",
-        careLevel: "Easy",
+        careLevel: "Medium",
         price: 3.750,
         sunlight: "Bright light",
         water: "Every 2 weeks",
@@ -87,7 +87,7 @@ const plants = [
     {
         name: "Golden Barrel Cactus",
         category: "Cactus",
-        careLevel: "Hard",
+        careLevel: "Easy",
         price: 5.250,
         sunlight: "Full sun",
         water: "Every 3-4 weeks",

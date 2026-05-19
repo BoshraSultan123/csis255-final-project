@@ -14,8 +14,9 @@ function createPlantCard(plant) {
             <img src="${plant.image}" alt="${plant.name}">
         </div>
         <div class="plntDtls">
-            <p>${plant.category}</p>
-            <p>${plant.price.toFixed(3)} KD</p>
+            <p> Price: ${plant.price.toFixed(3)} KD</p>
+            <p> Needs: ${plant.sunlight}</p>
+            <p> Water ${plant.water}</p>
         </div>
         <button class="addToCart">ADD TO CART</button>
     `;

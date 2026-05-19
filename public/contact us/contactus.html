@@ -3,6 +3,7 @@
 <header>
     <title>Homepage</title>
     <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="../contact us/contactUsStyle.css">
 </header>
 
 <body>
@@ -17,10 +18,78 @@
         </ul>
     </nav>
 
+    <div id="background1">
+
+
+        <main>
+            <form id="contactForm" action="/contact" method="POST">
+                <h2 style="background-color: #fcffde; color: #304932; padding: 10px 130px; border-radius: 15px;">Contact Us</h2>
+
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Choose a category --</option>
+                        <option value="general">General Question</option>
+                        <option value="order">Order Issue</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="message" >Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..."
+                        minlength="10" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to be contacted about my message.</label>
+                </div>
+                <br>
+
+                <div>
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </main>
+
+
+        
+        <footer>
+            <div class="footer">
+                <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
+                <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636</p>
+                <div>
+                    <h2 style="font-size: 16px;">Quick Links:</h2>
+                    <ul>
+                        <li><a href="../homepage/index.html">home</a></li>
+                        <li><a href="../Shop/shop.html">Shop</a></li>
+                        <li><a href="../cart/cart.html">Cart</a></li>
+                        <li><a href="../About us/aboutus.html">About us</a></li>
+                        <li><a href="../contact us/contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
 </body>
 
-<footer>
-
-</footer>
 
 </html>
