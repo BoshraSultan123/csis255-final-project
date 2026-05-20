@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/Shop/shop.css">
 
 </header>
-<p> Testing smth (will be removed later) </p>
 
 <body>
     <!-- <img class="background" src="../assets/forest.jpg"> -->
@@ -22,12 +21,13 @@
 
     <div id="background1">
         <div class="shopMainBox">
+  <!-- -------------------- SHOP TOP CONTENT --------------------- -->
             <div id="shopTitle">
                 <h1>SHOP</h1>
             </div>
 
 
-            <!-- search by container (might delete) -->
+            <!-- search by (filter) container  -->
 
             <div class="searchByContainer">
 
@@ -59,20 +59,39 @@
             </div>
 
 
-            <!-- Shop middle content (basically the plant cards) -->
-            <div class="shopMiddleContent">
-                <div class="cardsContainer" id="cardsContainer"> 
+            <!------------- SHOP MIDDLE CONTENT (basically the plant cards) ------------------------>
+            <main class="shopMiddleContent">
+                <div class="cardsContainer" id="cardsContainer">  </div>
+         <!-- yess at first look the 'middle content' looks empty but the html code for it is written in the JS file-->
 
-                </div>
-            </div>
+            </main>
         </div>
     </div>
 
+    <!-- The small popup that will show up when the user adds smth to cart -->
+<div id="addedMsg" class="addedMsg"> Added to cart!</div>
 
+<!--------------------- END CONTENT ------------------------>
+<!-- 
+ <footer>
+            <div class="footer">
+                <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
+                <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636</p>
+                <div>
+                    <h2 style="font-size: 16px;">Quick Links:</h2>
+                    <ul>
+                        <li><a href="/homepage/index.html">home</a></li>
+                        <li><a href="/Shop/shop.html">Shop</a></li>
+                        <li><a href="/cart/cart.html">Cart</a></li>
+                        <li><a href="/About us/aboutus.html">About us</a></li>
+                        <li><a href="/contact us/contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer> -->
 
-    <script src="plantinfo.js"></script>
-    <script src="shop.js"></script>
-
+    <script src="/Shop/plantinfo.js"></script>
+    <script src="/Shop/shop.js"></script>
 </body>
 
 

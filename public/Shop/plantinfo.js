@@ -105,12 +105,6 @@ const plants = [
     inStock: true
 }
 
-
-
-
-
-
-
 ];
 
 

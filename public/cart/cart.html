@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <title>Homepage</title>
+<head>
+    <title>Cart</title>
     <link rel="stylesheet" href="/stylesheet.css">
-</header>
+    <link rel="stylesheet" href="/cart/cart.css">
+</head>
 
 <body>
-    <!-- <img class="background" src="../assets/forest.jpg"> -->
     <nav class="navbar">
         <ul>
             <li><a href="/homepage/index.html">home</a></li>
@@ -17,10 +17,37 @@
         </ul>
     </nav>
 
+    <div id="cartBackground">
+        <div class="cartMainBox">
+            <div id="cartTitle">
+                <h1>CART</h1>
+            </div>
+
+            <div class="cartContent">
+                <div id="cartItemsContainer">
+                    <!-- items will load here (just like the plant cards in shop.html) -->
+                </div>
+
+                <div class="cartSummary">
+                    <div class="summaryBox">
+                        <p class="totalLabel">TOTAL</p>
+                        <p id="cartTotal">0.000 KD</p>
+                        <button class="checkoutBtn" onclick="completePurchase()">COMPLETE PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank you popup -->
+    <div id="thankYouPopup" class="popup hidden">
+        <div class="popupBox">
+            <h2>THANK YOU!</h2>
+            <p>Your order has been placed successfully.</p>
+            <button class="popupCloseBtn" onclick="closePopup()">CLOSE</button>
+        </div>
+    </div>
+
+    <script src="/cart/cart.js"></script>
 </body>
-
-<footer>
-
-</footer>
-
 </html>

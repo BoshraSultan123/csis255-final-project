@@ -1,10 +1,6 @@
-
-
-
 // This code here basically generates a card that displays each plant in shop when
 //  that new plant object is added to the plants list in plantinfo.js
 const cardsContainer = document.getElementById("cardsContainer");
-
 function createPlantCard(plant) {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -14,19 +10,39 @@ function createPlantCard(plant) {
             <img src="${plant.image}" alt="${plant.name}">
         </div>
         <div class="plntDtls">
-            <p> Price: ${plant.price.toFixed(3)} KD</p>
-            <p> Needs: ${plant.sunlight}</p>
-            <p> Water ${plant.water}</p>
+            <p>Price: ${plant.price.toFixed(3)} KD</p>
+            <p>Needs: ${plant.sunlight}</p>
+            <p>Water: ${plant.water}</p>
         </div>
-        <button class="addToCart">ADD TO CART</button>
+        <button class="addToCart" onclick="addToCart(${JSON.stringify(plant).replace(/"/g, '&quot;')})">ADD TO CART</button>
     `;
     cardsContainer.appendChild(card);
 }
 
+function showAddedMessage() {
+    const msg = document.getElementById("addedMsg");
+    msg.classList.add("show");
+    setTimeout(() => msg.classList.remove("show"), 2000);
+}
+
+
+//This calls the createPlantCard function, without it no plant cards would display
 plants.forEach(function(plant) {
     createPlantCard(plant);
 });
 
+//To add selected plant to cart
+function addToCart(plant) {
+    fetch("/cart", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(plant)
+    })
+    .then(res => res.json())
+    .then(data => {
+        showAddedMessage();
+    });
+}
 
 
 

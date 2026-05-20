@@ -12,16 +12,19 @@
     flex-direction: column;
     justify-content: start;
     gap: 0;
+    min-height: 100vh;
+    background-position: center top;
+    flex: 1;
+
 }
 
 .shopMainBox {
     margin-top: 25%;
     background-color: #304932;
     width: 100%;
-    /* 2:1 width - to - height ratio, ensures circularity  */
     aspect-ratio: 2/1;
     border-radius: 50% 50% 0 0;
-    height: 400px;
+    min-height: 400px;  
 }
 
 
@@ -37,7 +40,7 @@
 
 .shopMiddleContent {
     background-color: #304932;
-    height: 1200px;
+    /* min-height: 1200px; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -56,7 +59,7 @@
 .cardsContainer {
     background-color: #304932;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);  /* Well apparently this line saved me alot of work when it comes to card placements*/
     gap: 75px;
     width: 100%;
     padding: 0 100px;
@@ -220,7 +223,28 @@
     background-color: #426045;
 }
 
+
 .filterBtn.active {
     background-color: #426045;
-    outline: 2px solid #fff7e6;
+    outline: 2px solid #fff7e6;  /* the outline so the button looks 'pressed'.  */
+}
+
+.addedMsg {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1a2b1c;
+    color: #fff7e6;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-family: "Horizon", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    transition: opacity 300ms;
+    z-index: 9999;
+}
+
+.addedMsg.show {
+    opacity: 1;
 }
