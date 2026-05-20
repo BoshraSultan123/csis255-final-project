@@ -3,6 +3,7 @@
     width: 100%;
     left: 0;
     position: fixed;
+    z-index: 9999;
     top: 0;
     background: #304932;
     padding: 5px;
@@ -45,12 +46,15 @@
     font-family: "Horizon", sans-serif;
 }
 
-p, label, input::placeholder{
+p, label{
     font-family: "League Spartan", sans-serif;
     font-size: x-large;
 }
 
-
+input, textarea, #category {
+    font-family: "League Spartan", sans-serif;
+    font-size: large;
+}
 
 body {
     background-color: #1b2824;
@@ -59,6 +63,7 @@ body {
 main {
     flex: 1;
 }
+
 
 
 

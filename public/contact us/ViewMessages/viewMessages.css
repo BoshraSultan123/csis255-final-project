@@ -1,0 +1,38 @@
+/* force fotter to the end of the screen */
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+#messages-container {
+    height: 600px;
+    width: 600px;
+    background-color: #fff7e6;
+    margin: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#messageButton {
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

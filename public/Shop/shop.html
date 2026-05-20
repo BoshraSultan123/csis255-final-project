@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <title>Homepage</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/Shop/shop.css">
+
 </header>
+<p> Testing smth (will be removed later) </p>
 
 <body>
     <!-- <img class="background" src="../assets/forest.jpg"> -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="../homepage/index.html">home</a></li>
-            <li><a href="../Shop/shop.html">Shop</a></li>
-            <li><a href="../cart/cart.html">Cart</a></li>
-            <li><a href="../About us/aboutus.html">About us</a></li>
-            <li><a href="../contact us/contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <main>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/homepage/index.html">home</a></li>
+                <li><a href="/Shop/shop.html">Shop</a></li>
+                <li><a href="/cart/cart.html">Cart</a></li>
+                <li><a href="/About us/aboutus.html">About us</a></li>
+                <li><a href="/contact us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="background1">
+            <div class="shopMainBox">
+                <div id="shopTitle">
+                    <h1>SHOP</h1>
+                </div>
 
 
-    
+                <!-- search by container (might delete) -->
+
+                <div class="searchByContainer">
+
+                    <div class="SearchByTitleContainer">
+                        <p class="searchByTitle">SEARCH BY (ONE OPTION PER ROW)</p>
+                    </div>
+
+                    <div class="rowsContainer">
+                        <div class="filterRow">
+                            <span class="filterLabel">PLANT TYPE</span>
+
+                            <button class="filterBtn" onclick="setFilter('type', 'indoor' ,this)">INDOOR</button>
+                            <button class="filterBtn" onclick="setFilter('type', 'outdoor' ,this)">OUTDOOR</button>
+                        </div>
+
+                        <div class="filterRow">
+                            <span class="filterLabel">PRICE</span>
+                            <button class="filterBtn" onclick="setFilter('price', 'high-low' ,this)">HIGH - LOW</button>
+                            <button class="filterBtn" onclick="setFilter('price', 'low-high' ,this)">LOW - HIGH</button>
+                        </div>
+
+                        <div class="filterRow">
+                            <span class="filterLabel">CARE LEVEL</span>
+                            <button class="filterBtn" onclick="setFilter('care', 'easy' ,this)">EASY</button>
+                            <button class="filterBtn" onclick="setFilter('care', 'medium' ,this)">MEDIUM</button>
+                            <button class="filterBtn" onclick="setFilter('care', 'hard' ,this)">HARD</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Shop middle content (basically the plant cards) -->
+                <div class="shopMiddleContent">
+                    <div class="cardsContainer" id="cardsContainer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+    <script src="shop.js"></script>
 </body>
 
 

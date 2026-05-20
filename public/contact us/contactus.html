@@ -22,7 +22,7 @@
 
 
         <main>
-            <form id="contactForm" action="/contact" method="POST">
+            <form id="contactForm" action="/contact" method="post">
                 <h2 style="background-color: #fcffde; color: #304932; padding: 10px 130px; border-radius: 15px;">Contact Us</h2>
 
                 <div>
@@ -53,21 +53,22 @@
                         minlength="10" required></textarea>
                 </div>
                 <br>
-                <div>
-                    <input type="checkbox" id="agree" name="agree" required>
-                    <label for="agree">I agree to be contacted about my message.</label>
-                </div>
-                <br>
 
                 <div>
                     <button type="submit">Send Message</button>
                     <button type="reset">Clear</button>
                 </div>
             </form>
+
+            <a href="ViewMessages/viewMessages.html">
+                <div id="messageButton">
+                    <p>see<br>messages</p>
+                </div>
+            </a>
         </main>
 
 
-        
+
         <footer>
             <div class="footer">
                 <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
@@ -86,9 +87,7 @@
         </footer>
     </div>
 
-
-
-
+    <script type="text/javascript" src="contactus.js"></script>
 </body>
 
 

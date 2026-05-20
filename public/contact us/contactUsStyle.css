@@ -20,14 +20,30 @@ main {
 
 #contactForm {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     background-color: #304932;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 50px 60px 50px;
+    padding: 30px 70px 70px 70px;
     border-radius: 30px;
     box-shadow: 0px 15px 70px rgba(255, 247, 230, 0.45);
-
+    position: relative;
 }
 
+
+#messageButton {
+    border-radius: 50%;
+    background-color: #fff7e6;
+    color: #304932;
+    text-align: center;
+    padding:22px 10px 22px 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+#messageButton > p {
+    font-family: "Horizon", sans-serif;
+    font-size: small;
+
+}
