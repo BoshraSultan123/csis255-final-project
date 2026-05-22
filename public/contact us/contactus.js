@@ -29,6 +29,7 @@ form.addEventListener("submit", async(formSubmission) => {
         return;
     }
 
+
     // manual post fetch. form submit causes issues with response to send user back to contact us pg
     const response = await fetch("/contact", {
         method: "POST",
@@ -38,7 +39,7 @@ form.addEventListener("submit", async(formSubmission) => {
         body: JSON.stringify(formData)
     });
 
-    const result = await response.json();
+    const result = await response.json(); // https://developer.mozilla.org/en-US/docs/Web/API/Response/json#:~:text=result%20is%20not%20JSON%20but%20is%20instead%20the%20result%20of%20taking%20JSON%20as%20input%20and%20parsing%20it%20to%20produce%20a%20JavaScript%20object.
 
     if (result.success === true) {
         alert(result.message);

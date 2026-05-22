@@ -20,11 +20,10 @@
 
     <div id="background1">
 
-
+<!-- - - - - - - - - - - - - - - - -  - - - - M A I N  C O N T A C T  U S  C O N T E N T - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <main>
-            <form id="contactForm" action="/contact" method="post">
+            <form id="contactForm"> <!-- No action or method specified because of manual routing in contactus.js -->
                 <h2 style="background-color: #fcffde; color: #304932; padding: 10px 130px; border-radius: 15px;">Contact Us</h2>
-
                 <div>
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -53,21 +52,14 @@
                         minlength="10" required></textarea>
                 </div>
                 <br>
-
                 <div>
                     <button type="submit">Send Message</button>
                     <button type="reset">Clear</button>
                 </div>
             </form>
-
-            <a href="ViewMessages/viewMessages.html">
-                <div id="messageButton">
-                    <p>see<br>messages</p>
-                </div>
-            </a>
         </main>
 
-
+<!-- - - - - - - - - - - - - - - - - - - - - - - - F o o t e r c o n t e n t - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <footer>
             <div class="footer">

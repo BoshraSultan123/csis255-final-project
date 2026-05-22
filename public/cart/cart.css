@@ -1,0 +1,243 @@
+#cartBackground {
+    margin-top: 50px;
+    background-image: url("/assets/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartMainBox {
+    margin-top: 25%;
+    background-color: #304932;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 50% 50% 0 0;
+    min-height: 600px;
+}
+
+#cartTitle {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: #fff7e6;
+}
+
+.cartContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+    gap: 30px;
+}
+.cartItem {
+    background-color: #fbeccd;
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cartItemImg {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cartItemInfo {
+    flex-grow: 1;
+}
+
+.cartItemName {
+    font-family: "Horizon", sans-serif;
+    font-size: 14px;
+    /* letter-spacing: 0px; */
+    color: #1a2b1c;
+    margin: 0;
+}
+
+.cartItemPrice {
+    font-size: 13px;
+    color: #304932;
+    margin: 4px 0 0;
+}
+
+.cartItemSubtotal {
+    font-family: "Horizon", sans-serif;
+    font-size: 13px;
+    color: #1a2b1c;
+    margin: 0;
+}
+
+.removeBtn {
+    background-color: #1a2b1c;
+    color: #fff7e6;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.removeBtn:hover {
+    background-color: #304932;
+}
+
+#cartItemsContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cartSummary {
+    width: 60%;
+}
+
+.summaryBox {
+    background-color: #fbeccd;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalLabel {
+    font-family: "Horizon", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #1a2b1c;
+    margin: 0;
+}
+
+#cartTotal {
+    font-family: "Horizon", sans-serif;
+    font-size: 16px;
+    color: #1a2b1c;
+    margin: 0;
+}
+
+.checkoutBtn {
+    background-color: #1a2b1c;
+    color: #fff7e6;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "Horizon", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.checkoutBtn:hover {
+    background-color: #426045;
+}
+
+.emptyCart {
+    color: #fff7e6;
+    font-family: "Horizon", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+/* THANK YOU POPUP */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popupBox {
+    background-color: #fbeccd;
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 400px;
+    text-align: center;
+}
+
+.popupBox h2 {
+    font-family: "Horizon", sans-serif;
+    color: #1a2b1c;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.popupBox p {
+    color: #304932;
+    margin: 0;
+}
+
+.popupCloseBtn {
+    background-color: #1a2b1c;
+    color: #fff7e6;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "Horizon", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.popupCloseBtn:hover {
+    background-color: #304932;
+}
+
+
+.quantityControls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.qtyBtn {
+    background-color: #1a2b1c;
+    color: #fff7e6;
+    border: none;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.qtyBtn:hover {
+    background-color: #304932;
+}
+
+.qtyDisplay {
+    font-family: "Horizon", sans-serif;
+    font-size: 14px;
+    color: #1a2b1c;
+    min-width: 20px;
+    text-align: center;
+}
