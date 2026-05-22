@@ -19,20 +19,21 @@ The website includes a homepage, shop page, about us page, contact form, and a s
 <h2> How to Run the Project </h2>
 
 <h3>1. Open the Project Folder </h3>
-```cd csis255-final-project```
+```bash
+cd csis255-final-project```
 
 <h3>3. Install dependencies</h3>
-```npm install```
+```bash
+npm install```
 
 <p>This installs all required packages listed in package.json.</p>
 
 <h3>4. Start the server</h3>
-```npm start```
+```bash
+npm start```
 
 <h3>5. Open the website</h3>
-
 <p>After starting the server, open this link in your browser:</p>
-
 http://localhost:3000
 
 ---
