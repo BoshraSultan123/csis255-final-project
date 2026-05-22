@@ -18,13 +18,7 @@ The website includes a homepage, shop page, about us page, contact form, and a s
 
 <h2>How to Run the Project</h2>
 
-<h3>1. Open the Project Folder</h3>
-
-```bash
-cd csis255-final-project
-```
-
-<h3>2. Install Dependencies</h3>
+<h3>1. Install Dependencies</h3>
 
 ```bash
 npm install
@@ -32,13 +26,13 @@ npm install
 
 <p>This installs all required packages listed in <code>package.json</code>.</p>
 
-<h3>3. Start the Server</h3>
+<h3>2. Start the Server</h3>
 
 ```bash
 npm start
 ```
 
-<h3>4. Open the Website</h3>
+<h3>3. Open the Website</h3>
 
 <p>After starting the server, open this link in your browser:</p>
 
