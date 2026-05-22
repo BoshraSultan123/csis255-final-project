@@ -46,7 +46,7 @@ npm start
 
 ---
 
-<h2>Work Distribution</h2>
+<h2>Work Distribution.</h2>
 
 <table>
   <tr>
