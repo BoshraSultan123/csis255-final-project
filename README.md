@@ -6,7 +6,7 @@ The website includes a homepage, shop page, about us page, contact form, and a s
 
 ---
 
-<h2> Created By <h2>
+<h2> Created By </h2>
 
 <ul>
     <li>Yunona Agzamova - 70152</li>
