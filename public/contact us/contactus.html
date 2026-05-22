@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-<header>
+
+<head>
     <title>Homepage</title>
     <link rel="stylesheet" href="/stylesheet.css">
     <link rel="stylesheet" href="../contact us/contactUsStyle.css">
-</header>
+</head>
 
 <body>
-    <!-- <img class="background" src="../assets/forest.jpg"> -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="../homepage/index.html">home</a></li>
-            <li><a href="../Shop/shop.html">Shop</a></li>
-            <li><a href="../cart/cart.html">Cart</a></li>
-            <li><a href="../About us/aboutus.html">About us</a></li>
-            <li><a href="../contact us/contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../homepage/index.html">home</a></li>
+                <li><a href="../Shop/shop.html">Shop</a></li>
+                <li><a href="../cart/cart.html">Cart</a></li>
+                <li><a href="../About us/aboutus.html">About us</a></li>
+                <li><a href="../contact us/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div id="background1">
-
-<!-- - - - - - - - - - - - - - - - -  - - - - M A I N  C O N T A C T  U S  C O N T E N T - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div id="background1"> <!--Background wrapper bcs content should be on top of it-->
+        <!-- - - - - - - - - - - - - - - - -  - - - - M A I N  C O N T A C T  U S  C O N T E N T - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <main>
             <form id="contactForm"> <!-- No action or method specified because of manual routing in contactus.js -->
-                <h2 style="background-color: #fcffde; color: #304932; padding: 10px 130px; border-radius: 15px;">Contact Us</h2>
+                <h2 style="background-color: #fcffde; color: #304932; padding: 10px 130px; border-radius: 15px;">Contact
+                    Us</h2>
                 <div>
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -46,7 +48,7 @@
                 </div>
                 <br>
                 <div>
-                    <label for="message" >Message:</label>
+                    <label for="message">Message:</label>
                     <br>
                     <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..."
                         minlength="10" required></textarea>
@@ -59,22 +61,21 @@
             </form>
         </main>
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - F o o t e r c o n t e n t - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - F o o t e r c o n t e n t - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <footer>
-            <div class="footer">
-                <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
-                <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636</p>
-                <div>
-                    <h2 style="font-size: 16px;">Quick Links:</h2>
-                    <ul>
-                        <li><a href="../homepage/index.html">home</a></li>
-                        <li><a href="../Shop/shop.html">Shop</a></li>
-                        <li><a href="../cart/cart.html">Cart</a></li>
-                        <li><a href="../About us/aboutus.html">About us</a></li>
-                        <li><a href="../contact us/contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
+            <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
+            <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636
+            </p>
+            <div>
+                <h2 style="font-size: 16px;">Quick Links:</h2>
+                <ul>
+                    <li><a href="../homepage/index.html">home</a></li>
+                    <li><a href="../Shop/shop.html">Shop</a></li>
+                    <li><a href="../cart/cart.html">Cart</a></li>
+                    <li><a href="../About us/aboutus.html">About us</a></li>
+                    <li><a href="../contact us/contactus.html">Contact Us</a></li>
+                </ul>
             </div>
         </footer>
     </div>

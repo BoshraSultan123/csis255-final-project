@@ -1,28 +1,36 @@
 /* -------------- SHOP STYLES ---------------*/
 
+/* changes moved from stylesheet.css for footer*/
+body {
+    background-color: #304932;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-#background1 {
-    height: auto;
-    background-image: url("/assets/forest.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 50px;
+main {
+    flex: 1;
+}
+
+
+#shopBackground {
+   height: 90vh;
+   flex: 1;
     color: #fff7e6;
+    background-image: url("../assets/forest.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 0;
-    min-height: 100vh;
-    background-position: center top;
-    flex: 1;
-
 }
+
 
 .shopMainBox {
     margin-top: 25%;
     background-color: #304932;
     width: 100%;
-    aspect-ratio: 2/1;
     border-radius: 50% 50% 0 0;
     min-height: 400px;  
 }
@@ -40,19 +48,12 @@
 
 .shopMiddleContent {
     background-color: #304932;
-    /* min-height: 1200px; */
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     align-items: center;
     width: 100%;
-
+    padding: 50px 0;
 }
-
 
 /* PLANT CARDS DESIGN */
 
@@ -248,3 +249,25 @@
 .addedMsg.show {
     opacity: 1;
 }
+
+
+/* 
+.footer {
+    background-color:#304932;    
+    border-radius: 40% 40% 0 0;
+    height: fit-content;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: #fff7e6;
+} */
+
+
+ .footer {
+
+background-color:#304932;    
+
+
+ }

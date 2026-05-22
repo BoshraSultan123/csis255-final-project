@@ -38,7 +38,7 @@
 
 
 /* - - - - - - - - - - - - - - - - -  M I D D L E  C O N T E N T - - - - - - - - - - - - - - - - - - - - - -*/
-#MiddleContent {
+main {
     background-color: #304932;
     height: fit-content;
     display: flex;

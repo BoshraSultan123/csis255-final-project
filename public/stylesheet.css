@@ -70,10 +70,9 @@ main {
 /* - - - - - - - - - - - - - - - - - - - - E N D  C O N T E N T - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* for reuse in all if not most views: */
-.footer {
+footer {
     background-color: #304932;
     border-radius: 40% 40% 0 0;
-    height: fit-content;
     padding: 30px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -82,14 +81,14 @@ main {
     color: #fff7e6;
 }
 
-.footer ul {
+footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.footer a {
+footer a {
     margin: 0 10px 0 10px;
     color: #fff7e6;
     font-size: 13px;
