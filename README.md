@@ -48,6 +48,7 @@ The website includes a homepage, shop page, about us page, contact form, and a s
 
 ```bash
 cd csis255-final-project
+```
 
 <table>
     <tr>
