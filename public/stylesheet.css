@@ -32,10 +32,10 @@
 
 
 /* change font of webpages */
-/* @font-face {
+@font-face {
     font-family: "Horizon";
     src: url("/Fonts/Horizon-Font/horizon.otf") format("opentype");
-} */
+}
 
 @font-face {
     font-family: "League Spartan";
