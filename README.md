@@ -42,9 +42,7 @@ npm start
 
 <p>After starting the server, open this link in your browser:</p>
 
-```text
-http://localhost:3000
-```
+[http://localhost:3000](http://localhost:3000)
 
 ---
 
