@@ -1,55 +1,42 @@
-<!-- # csis255-final-project
-Full-Stack Web Application Project - Birds of Paradise - plant store
 
-Created by:
-- Yunona Agzamova 70152
-- Boshra Sultan 63636
+<h1>Birds of Paradise - Plant Store <br> Full-Stack Web Application Project</h1>
+
+<p>Birds of Paradise is a plant store website created for the CSIS255 final project.  
+The website includes a homepage, shop page, about us page, contact form, and a server-side setup using Node.js and Express.</p>
+
+---
+
+<h2> Created By <h2>
+
+<ul>
+    <li>Yunona Agzamova - 70152</li>
+    <li>Boshra Sultan - 63636</li>
+</ul>
 
 
-2. Open the project folder
+---
+
+<h2> How to Run the Project </h2>
+
+<h3>1. Open the Project Folder </h3>
 ```cd csis255-final-project```
-3. Install dependencies
+
+<h3>3. Install dependencies</h3>
 ```npm install```
 
-This installs all required packages listed in package.json.
+<p>This installs all required packages listed in package.json.</p>
 
-4. Start the server
+<h3>4. Start the server</h3>
 ```npm start```
-5. Open the website
 
-After starting the server, open this link in your browser:
+<h3>5. Open the website</h3>
+
+<p>After starting the server, open this link in your browser:</p>
 
 http://localhost:3000
 
-
-work distribution:
-Yunona: Homepage, Contact us, Server set up
-Boshra: Shop, About us
- -->
-# Birds of Paradise - Plant Store
-
-## Full-Stack Web Application Project
-
-Birds of Paradise is a plant store website created for the CSIS255 final project.  
-The website includes a homepage, shop page, about us page, contact form, and a server-side setup using Node.js and Express.
-
 ---
-
-## Created By
-
-- Yunona Agzamova - 70152
-- Boshra Sultan - 63636
-
----
-
-## How to Run the Project
-
-### 1. Open the Project Folder
-
-```bash
-cd csis255-final-project
-```
-
+<h2>Work distribution</h2>
 <table>
     <tr>
         <th> Yunona </th>
