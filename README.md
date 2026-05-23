@@ -60,3 +60,5 @@ npm start
     <td></td>
   </tr>
 </table>
+
+psa: cmd+shift+v for mac to view readme on vscode. (od ctrl+shift+v on windows)
