@@ -66,8 +66,8 @@ const plants = [
     // Succulents & Cacti
     {
         name: "Aloe Vera",
-        category: "Succulent",
-        careLevel: "Easy",
+        category: "Outdoor Plant",
+        careLevel: "Medium",
         price: 4.500,
         sunlight: "Bright indirect light",
         water: "Every 2-3 weeks",
@@ -76,7 +76,7 @@ const plants = [
     },
     {
         name: "Echeveria",
-        category: "Succulent",
+        category: "Indoor Plant",
         careLevel: "Medium",
         price: 3.750,
         sunlight: "Bright light",
@@ -86,23 +86,23 @@ const plants = [
     },
     {
         name: "Golden Barrel Cactus",
-        category: "Cactus",
+        category: "Outdoor Plant",
         careLevel: "Easy",
         price: 5.250,
         sunlight: "Full sun",
         water: "Every 3-4 weeks",
         image: "/assets/plants/golden-barrel-cactus.jpeg",
         inStock: true
-    } ,
-   {
-    name: "Spider Plant",
-    category: "Indoor Plant",
-    careLevel: "Easy",
-    price: 3.500,
-    sunlight: "Bright indirect light",
-    water: "Every 1-2 weeks",
-    image: "/assets/plants/spiderPlant.png",
-    inStock: true
-}
+    },
+    {
+        name: "Spider Plant",
+        category: "Indoor Plant",
+        careLevel: "Easy",
+        price: 3.500,
+        sunlight: "Bright indirect light",
+        water: "Every 1-2 weeks",
+        image: "/assets/plants/spiderPlant.png",
+        inStock: true
+    }
 
 ];
