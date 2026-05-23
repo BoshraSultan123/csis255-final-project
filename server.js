@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
+const cart =[];
 const app = express();
 const PORT = 3000;
 
@@ -10,6 +11,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "homepage", "index.html"));
 });
+
+
 
 // read form data sent from HTML formns
 // app.use(express.urlencoded({ extended: false })); // only works with html
