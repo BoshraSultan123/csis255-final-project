@@ -103,6 +103,7 @@ const plants = [
         water: "Every 1-2 weeks",
         image: "/assets/plants/spiderPlant.png",
         inStock: true
+        
     }
 
 ];
