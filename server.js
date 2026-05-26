@@ -82,9 +82,10 @@ app.post("/cart/checkout", function (req, res) {
         res.json({
             sucess: false,
             reason: "empty"});
+    } else {
+        cart = [];
+        res.json({ success: true });
     }
-    cart = [];
-    res.json({ success: true });
 });
 
 // PUT (to update item quantity)
