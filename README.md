@@ -63,4 +63,5 @@ npm start
 
 <p>psa: cmd+shift+v for mac to view readme on vscode. (or ctrl+shift+v on windows)<p>
 <p>If the above access to the formatted README.md doesnt work, you can check out our github repo:<p>
+
 [https://github.com/BoshraSultan123/csis255-final-project](https://github.com/BoshraSultan123/csis255-final-project)
