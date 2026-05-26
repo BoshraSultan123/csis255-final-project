@@ -14,12 +14,12 @@ main {
 
 
 #shopBackground {
-   height: 90vh;
-   flex: 1;
+    min-height: 90vh;
+    flex: 1;
     color: #fff7e6;
     background-image: url("../assets/forest.jpg");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -32,7 +32,7 @@ main {
     background-color: #304932;
     width: 100%;
     border-radius: 50% 50% 0 0;
-    min-height: 400px;  
+    min-height: 400px;
 }
 
 
@@ -60,13 +60,12 @@ main {
 .cardsContainer {
     background-color: #304932;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Well apparently this line saved me alot of work when it comes to card placements*/
+    grid-template-columns: repeat(3, 1fr);
+    /* Well apparently this line saved me alot of work when it comes to card placements*/
     gap: 75px;
     width: 100%;
     padding: 0 100px;
     box-sizing: border-box;
-
-
 }
 
 .card {
@@ -89,10 +88,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     font-size: 18px;
-
-
-
+    font-size: 18px;
 }
 
 
@@ -227,7 +223,8 @@ main {
 
 .filterBtn.active {
     background-color: #426045;
-    outline: 2px solid #fff7e6;  /* the outline so the button looks 'pressed'.  */
+    outline: 2px solid #fff7e6;
+    /* the outline so the button looks 'pressed'.  */
 }
 
 .addedMsg {
@@ -265,9 +262,7 @@ main {
 } */
 
 
- .footer {
+.footer {
 
-background-color:#304932;    
-
-
- }
+    background-color: #304932;
+}

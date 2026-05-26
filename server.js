@@ -39,7 +39,7 @@ app.post("/contact", (req, res) => {
 
   objArray.push(formData);
 
-  fs.writeFileSync(msgsFilePath, JSON.stringify(obj, null, 2));
+  fs.writeFileSync(msgsFilePath, JSON.stringify(objArray, null, 2));
   // cant send js object through HTTP without converting to json text, then parse into js object on client side using response.json()
   res.json({
     success: true,
