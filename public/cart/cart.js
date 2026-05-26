@@ -61,14 +61,20 @@ function completePurchase() {
         if (data.success) {
             renderCart([]);
             document.getElementById("thankYouPopup").classList.remove("hidden");
+        } else if (!data.success && data.reason === "empty"){
+            renderCart([]);
+            document.getElementById("EmptyCartPopup").classList.remove("hidden")
         }
     });
 }
 
-function closePopup() {
-    document.getElementById("thankYouPopup").classList.add("hidden");
+function closePopup(popupType) {
+    if (popupType === "EmptyCartPopup"){
+        document.getElementById("EmptyCartPopup").classList.add("hidden");
+    } else if (popupType === "thankYouPopup") {
+        document.getElementById("thankYouPopup").classList.add("hidden");
+    }
 }
-
 
 function updateQuantity(name, direction) {
     fetch("/cart/" + name, {

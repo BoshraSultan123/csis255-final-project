@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
-const cart =[];
+let cart =[];
 const app = express();
 const PORT = 3000;
 
@@ -78,6 +78,11 @@ app.delete("/cart/:name", function (req, res) {
 
 // POST (clears cart)
 app.post("/cart/checkout", function (req, res) {
+    if(cart.length == 0) {
+        res.json({
+            sucess: false,
+            reason: "empty"});
+    }
     cart = [];
     res.json({ success: true });
 });

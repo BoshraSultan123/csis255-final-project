@@ -49,7 +49,15 @@
             <div class="popupBox">
                 <h2>THANK YOU!</h2>
                 <p>Your order has been placed successfully.</p>
-                <button class="popupCloseBtn" onclick="closePopup()">CLOSE</button>
+                <button class="popupCloseBtn" onclick="closePopup('thankYouPopup')">CLOSE</button>
+            </div>
+        </div>
+        <!-- Empty Cart Popup -->
+        <div id="EmptyCartPopup" class="popup hidden">
+            <div class="popupBox">
+                <h2>PURCHASE FAILED</h2>
+                <p>Your cart is empty, can not process purchase.</p>
+                <button class="popupCloseBtn" onclick="closePopup('EmptyCartPopup')">CLOSE</button>
             </div>
         </div>
     </main>
