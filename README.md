@@ -62,3 +62,5 @@ npm start
 </table>
 
 psa: cmd+shift+v for mac to view readme on vscode. (or ctrl+shift+v on windows)
+If the above doesnt work, you can check out our github repo:
+[https://github.com/BoshraSultan123/csis255-final-project] (https://github.com/BoshraSultan123/csis255-final-project)
