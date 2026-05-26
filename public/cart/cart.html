@@ -21,8 +21,8 @@
         </nav>
     </header>
 
-    <main>
-        <div id="cartBackground">
+    <div id="cartBackground">
+        <main>
             <div class="cartMainBox">
                 <div id="cartTitle">
                     <h1>CART</h1>
@@ -42,41 +42,43 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Thank you popup -->
-        <div id="thankYouPopup" class="popup hidden">
-            <div class="popupBox">
-                <h2>THANK YOU!</h2>
-                <p>Your order has been placed successfully.</p>
-                <button class="popupCloseBtn" onclick="closePopup('thankYouPopup')">CLOSE</button>
-            </div>
-        </div>
-        <!-- Empty Cart Popup -->
-        <div id="EmptyCartPopup" class="popup hidden">
-            <div class="popupBox">
-                <h2>PURCHASE FAILED</h2>
-                <p>Your cart is empty, can not process purchase.</p>
-                <button class="popupCloseBtn" onclick="closePopup('EmptyCartPopup')">CLOSE</button>
-            </div>
-        </div>
-    </main>
 
-    <footer>
-        <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
-        <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636
-        </p>
-        <div>
-            <h2 style="font-size: 16px;">Quick Links:</h2>
-            <ul>
-                <li><a href="/homepage/index.html">home</a></li>
-                <li><a href="/Shop/shop.html">Shop</a></li>
-                <li><a href="/cart/cart.html">Cart</a></li>
-                <li><a href="/About us/aboutus.html">About us</a></li>
-                <li><a href="/contact us/contactus.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </footer>
+            <!-- Thank you popup -->
+            <div id="thankYouPopup" class="popup hidden">
+                <div class="popupBox">
+                    <h2>THANK YOU!</h2>
+                    <p>Your order has been placed successfully.</p>
+                    <button class="popupCloseBtn" onclick="closePopup('thankYouPopup')">CLOSE</button>
+                </div>
+            </div>
+            <!-- Empty Cart Popup -->
+            <div id="EmptyCartPopup" class="popup hidden">
+                <div class="popupBox">
+                    <h2>PURCHASE FAILED</h2>
+                    <p>Your cart is empty, can not process purchase.</p>
+                    <button class="popupCloseBtn" onclick="closePopup('EmptyCartPopup')">CLOSE</button>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <h1 style="font-size: 16px; text-decoration: underline;">“Bringing Nature Closer to You.”</h1>
+            <p style="text-align: center;font-size: 11px;">By:<br> Yunona Agzamova 70152 <br> Boshra Sultan 63636
+            </p>
+            <div>
+                <h2 style="font-size: 16px;">Quick Links:</h2>
+                <ul>
+                    <li><a href="/homepage/index.html">home</a></li>
+                    <li><a href="/Shop/shop.html">Shop</a></li>
+                    <li><a href="/cart/cart.html">Cart</a></li>
+                    <li><a href="/About us/aboutus.html">About us</a></li>
+                    <li><a href="/contact us/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
     <script src="/cart/cart.js"></script>
 </body>

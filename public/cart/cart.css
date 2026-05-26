@@ -1,5 +1,5 @@
 #cartBackground {
-    min-height: 90vh;
+    min-height: 100vh;
     color: #fff7e6;
     background-image: url("../assets/forest.jpg");
     background-repeat: no-repeat;
@@ -24,10 +24,11 @@ are entered so decide what you wish to keep. */
     margin-top: 25%;
     background-color: #304932;
     width: 100%;
-    border-radius: 50% 50% 0 0;
+    border-radius: 40% 40% 40% 40%;
     min-height: 600px;
     height: auto;
     padding-bottom: 60px;
+    margin-bottom: 5%;
     box-sizing: border-box;
 }
 
@@ -256,3 +257,4 @@ are entered so decide what you wish to keep. */
     min-width: 20px;
     text-align: center;
 }
+
